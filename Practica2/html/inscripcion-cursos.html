@@ -1,0 +1,117 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de cerámica</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="menu-nav menu-nav--compressed">
+            <h2><a class="hero__titulo--compressed" href="../index.html">El taller</a></h2>
+            <ul class="menu-nav__ul menu-nav__ul--compressed">
+                <li><a class="menu-nav__item" href="../html/que-es-la-ceramica.html">Cerámica</a></li>
+                <li><a class="menu-nav__item" href="../html/cursos.html">Cursos</a></li>
+                <li><a class="menu-nav__item menu-nav_item--activo" href="../html/inscripcion-cursos.html">Inscripción</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="pagina__titulo-inscripcion">Inscripción a los cursos</h1>
+  
+    <form action="#" method="post" class="formulario">
+        <p class="form__recordatorio"><small>Los campos señalados con * son obligatorios</small></p>
+        <fieldset class="fieldset fieldset--detalles">
+            <legend class="fieldset__legend">Detalles de la inscripción</legend>
+
+            <label class="fieldset__label" for="nombre">
+                Nombre *
+                <input class="fieldset__input" type="text" id="nombre" name="nombre" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ'\-]{2,64}$" required>
+            </label>
+
+            <label class="fieldset__label" for="apellidos">
+                Apellidos *
+                <input class="fieldset__input" type="text" id="apellidos" name="apellidos" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ'\- ]{2,128}$" required>
+            </label>
+            
+            <label class="fieldset__label" for="email">
+                Correo electrónico *
+                <input class="fieldset__input" type="email" id="email" name="email" required>
+            </label>
+            
+            <label class="fieldset__label" for="telefono">
+                Teléfono *
+                <input class="fieldset__input" type="tel" id="telefono" name="telefono" required>
+            </label>
+
+            <label class="fieldset__label" for="fecha">
+                Fecha de nacimiento *
+                <input class="fieldset__input" type="date" id="fecha" name="fecha" required>
+            </label>
+            
+            <label class="fieldset__label" for="curso">
+                Curso *
+                <select class="fieldset__input--select" id="curso" name="curso" required>
+                    <option value="">Selecciona el curso</option>
+                    <option value="torno">Torno</option>
+                    <option value="ceramica">Cerámica</option>
+                    <option value="modelado">Modelado</option>
+                    <option value="esmaltes">Esmaltes</option>
+                    <option value="joyeria">Joyería cerámica</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset class="fieldset fieldset--otros">
+            <legend class="fieldset__legend">Otras informaciones</legend>
+
+            <fieldset class="fieldset--radio">
+                <legend class="fieldset__legend">¿Has hecho otros cursos con nosotros? *</legend>
+                <label class="fieldset__label--radio">
+                    <input class="fieldset__input" type="radio" name="cursos_previos" value="si" required> Sí
+                </label>
+                <label class="fieldset__label--radio">
+                    <input class="fieldset__input" type="radio" name="cursos_previos" value="no" required> No
+                </label>
+            </fieldset>
+            <label class="fieldset__label"  for="comentario">
+                ¿Quieres comentar o preguntar algo?
+                <textarea class="fieldset__input fieldset__input--textArea" id="comentario" name="comentario"></textarea>
+            </label>
+        </fieldset>
+
+        <fieldset class="fieldset fieldset--pago">
+            <legend class="fieldset__legend">Elige un método de pago *</legend>
+            <label>
+                <input type="radio" name="pago" value="transferencia" required> Transferencia
+            </label>
+            <label>
+                <input type="radio" name="pago" value="tarjeta" required> Tarjeta de débito / crédito
+            </label>
+            <label>
+                <input type="radio" name="pago" value="efectivo" required> En efectivo
+            </label>
+        </fieldset>
+
+        <p class="form__disclaimer">INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong class="texto--resaltado">EL TALLER</strong>. <strong class="texto--resaltado">Finalidades</strong>: recogida de datos para la inscripción como socio del interesado. <strong class="texto--resaltado">Legitimación</strong>: Consentimiento del interesado. <strong class="texto--resaltado">Destinatarios</strong>: No están previstas cesiones de datos a terceros, excepto obligación legal. <strong class="texto--resaltado">Derechos</strong>: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a <a class="ceramica__enlace" href="mailto:info@eltaller.es">info@eltaller.es</a>. <strong class="texto--resaltado">Información Adicional</strong>: Puede ampliar la información en el enlace de <a class="ceramica__enlace" href="#">Aviso Legal</a> y <a class="ceramica__enlace" href="#">Política de privacidad</a>.</p>
+
+        <label>
+            <input type="checkbox" name="privacidad" required> He leído y acepto la <a class="ceramica__enlace" href="#">política de privacidad</a> *
+        </label>
+
+        <div class="form__submit-container">
+            <button class="form__submir-button" type="submit">INSCRÍBEME</button>
+        </div>
+    </form>
+
+    <footer class="footer footer--compressed">
+        <ul class="footer__lista-avisos footer__content">
+            <li><a class="footer__enlace" href="#">Aviso legal</a></li>
+            <li><a class="footer__enlace" href="#">Política de privacidad</a></li>
+            <li><a class="footer__enlace" href="#">Política de cookies</a></li>
+        </ul>
+        <p class="footer__autor footer__content"><time datetime="2025">2025</time> © Javier Vicedo Cerdán</p>
+    </footer>
+</body>
+</html>
