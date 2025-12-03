@@ -328,6 +328,7 @@ table {
 .utensilios__lista{
 	width: 80%; 
 	list-style-type: square;
+	padding-top: 1rem;
     padding-left: 12%;
     padding-right: 10%;
 }
